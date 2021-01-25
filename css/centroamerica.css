@@ -1,0 +1,398 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+*{
+    box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+	background: #2c2f96;
+	font-size:22px;
+	line-height: 32px;
+  margin: 0;
+	color: #ffffff;
+	word-wrap:break-word !important;
+	font-family: 'Open Sans', sans-serif;
+}
+h1 {
+    padding-top: 3%;
+	font-size:50px;
+	line-height: 50px;
+	text-align: center;
+    color: #FFF;
+}	
+h2 {
+	font-size: 30px;
+	/* text-align: center; */
+	color: #FFF;
+}
+nav {  /*line*/
+    /* margin: 50px 0 0; */
+    position: fixed;
+    background-color: #db0000;
+    z-index: 100;
+    
+  text-align: left;
+  width: 100%;
+  box-shadow: 0px 4px 31px 4px rgba(0,0,0,0.75);
+}
+nav ul {
+	padding: 0;
+  margin: 0;
+	list-style: none;
+    position: relative;
+    text-align: center;
+	}
+	
+nav ul li {
+	display:inline-block;
+    background-color: #db0000;
+    padding: 0 4%;
+	}
+
+nav a {
+	display:block;
+	padding:0 10px;	
+	color:#FFF;
+	font-size:20px;
+	line-height: 60px;
+	text-decoration:none;
+}
+
+nav a:hover {
+    background-color: #3654a4;
+    color: #FFF;
+    text-decoration: none;
+}
+
+/* Hide Dropdowns by Default */
+nav ul ul {
+	display: none;
+	position: absolute; 
+	top: 60px; /* the height of the main nav */
+
+}
+
+/* espacio */
+.espacio{
+	/* text-align: center; */
+	padding-top: 1%;
+	padding: 1%;
+}
+.espacio *{
+	margin: 0;
+	padding: 0;
+}
+.extre{
+	padding-top: 117px;
+}
+/* acordeon */
+.accordian {
+	width: 805px; height: 320px;
+	overflow: hidden;
+	
+	/*Time for some styling*/
+	margin: 100px auto;
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+	-webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+	-moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
+}
+
+/*A small hack to prevent flickering on some browsers*/
+.accordian ul {
+	width: 2000px;
+	/*This will give ample space to the last item to move
+	instead of falling down/flickering during hovers.*/
+}
+
+.accordian li {
+	position: relative;
+	display: block;
+	width: 160px;
+	float: left;
+	
+	border-left: 1px solid #888;
+	
+	box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.5);
+	
+	/*Transitions to give animation effect*/
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	/*If you hover on the images now you should be able to 
+	see the basic accordian*/
+}
+
+/*Reduce with of un-hovered elements*/
+.accordian ul:hover li {
+	width: 40px;
+	height: 100%;
+}
+/*Lets apply hover effects now*/
+/*The LI hover style should override the UL hover style*/
+.accordian ul li:hover , .accordian ul li:hover img{
+	transition: all 0.5s;
+	width: 640px;
+}
+
+
+
+.accordian li img {
+	display: block;
+	height: 320px;
+}
+
+/*Image title styles*/
+.image_title {
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	left: 0; bottom: 0;	
+width: 640px;	
+
+}
+.image_title a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	padding: 20px;
+	font-size: 16px;
+}
+.wrap{
+	margin: 0 auto;
+	min-height: 100vh;
+}
+.footer {
+	color: #fff;
+	background: #00000094;
+	line-height: 1.6;
+	padding: 1em;
+	min-height: 100%;
+	text-align: center;
+  }
+
+  .flex{
+	display: flex;
+	margin: 1%;
+}
+.izqui{
+    width: 30%;
+}
+.izqui img{
+	width: 100%;
+	border: 1px solid #FFF;
+}
+.izqui a:hover img{
+	border: 5px solid #FFF;
+}
+.izqui a {
+    opacity: 0.68;
+}
+
+.izqui a:hover {
+	opacity: 1;
+	
+}
+.dere{
+	width: 70%;
+	padding: 2%;
+}
+.mita{
+	width: 50%;
+	border: 2px solid #fff;
+	background: #FFF;
+	margin: 1%;
+	width: 255px;
+}
+h3.h3{
+	color: #000;
+	text-align: center;
+}
+.mita img{
+	width: 250px;
+    height: 200px;
+}
+
+/*  */
+.container-header{
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+}
+
+.logo-title{
+    display: flex;
+}
+
+.logo-title img{
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.logo-title h4{
+    color: white;
+    font-weight: 100;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.icon-menu{
+    position: absolute;
+    right: 10px;
+    top: 14px;
+    color: white;
+    font-size: 28px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+
+.icon-menu:hover{
+    background: rgba(255, 255, 255, 0.4);
+}
+
+
+
+/*Portada*/
+
+
+.bandera1{
+	background-image: url(../imagenes/bandera1.png);
+}
+.bandera2{
+	background-image: url(../imagenes/bandera2.png);
+}
+.bandera3{
+	background-image: url(../imagenes/bandera3.png);
+}
+.bandera4{
+	background-image: url(../imagenes/bandera4.png);
+}
+.bandera5{
+	background-image: url(../imagenes/bandera5.png);
+}
+.container-portada{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    
+    background-size: 100%;
+    animation: movimiento 10s infinite linear alternate;  
+}
+.active{
+	background-color: #3654a4;
+	color: #FFF;
+}
+@keyframes movimiento{
+    from{
+        background-position: bottom left;
+    }to{
+        background-position: top right;
+    }
+}
+
+
+.capa-gradient{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: -webkit-linear-gradient(left, black, #0672d0);
+    opacity: 0.5;
+}
+
+.container-details{
+    width: 100%;
+    max-width: 1200px;
+    position: relative;
+    margin: auto;
+}
+
+
+.details{
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+    top: 20px;
+    color: white;
+}
+
+.details h1{
+    font-size: 40px;
+    font-weight: 100;
+    margin-left: 10px;
+}
+
+.details p{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 100;
+    margin-left: 10px;
+}
+
+.details button{
+    padding: 10px 20px;
+    font-size: 16px;
+    background: none;
+    border-style: none;
+    border: 1px solid white;
+    color: white;
+    margin-top: 20px;
+    transition: background 300ms;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.details button:hover{
+    background: white;
+    color: black;
+}
+.extre2{
+	padding-top: 27px;
+}
+
+/*Articulo*/
+
+main{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+article.artima{
+    width: 100%;
+    /* max-width: 800px; */
+    margin-top: 20px;
+    padding-right: 20px;
+}
+
+article.artima h1{
+    font-size: 40px;
+    font-weight: 100;
+    margin-left: 10px;
+}
+
+article.artima hr{
+    max-width: 500px;
+    height: 4px;
+    border-style: none;
+    background: -webkit-linear-gradient(left, #db000040, #db0000);
+    margin-top: 10px;
+	margin-left: auto;
+}
+
+article.artima p{
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 100;
+    margin-left: 10px;
+}
+
+
+
+@media screen and (max-width: 500px){
+    .details p{
+        font-size: 18px;
+    }
+}
